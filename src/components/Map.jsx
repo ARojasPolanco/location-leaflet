@@ -37,9 +37,11 @@ const Map = () => {
 
     const position = [location.lat, location.lng]
 
+    console.log(position)
+
     return (
         <section className='min-h-screen flex justify-center items-center'>
-            <MapContainer center={position} zoom={13} scrollWheelZoom={false} className='w-screen h-screen'>
+            <MapContainer center={[-38.716666666667, -62.266666666667]} zoom={13} scrollWheelZoom={false} className='w-screen h-screen'>
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
